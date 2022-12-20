@@ -1,0 +1,81 @@
+:root {
+    --color-primary: #ffffff;
+    --color-secondary: #ff0000;
+    --color-thirdiary: #0a0888;
+}
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+
+    body {
+        font-family: poppins, sans-serif;
+        
+        .home {/*section*/
+            background-size: cover;
+            background-image: url(../images/placa1200.jpg);
+            height: 100vh; /*viewport height; 100% da área do navegador */
+        
+            header {
+            
+                color: rgb(17, 0, 255);
+                padding: 30px 0;
+                
+                .nav {
+                    display: flex;
+                    justify-content: center;
+
+                    ul {
+                        display: flex;
+                        list-style: none;
+                        
+                            .logo {
+                            margin: 0 30px;
+                        
+                        }
+
+                        li {
+                            display: flex;
+                            align-items: center;
+                            margin: 0 10px;
+
+                            .k {
+                                font-size: 120px;
+                                font-weight: bold;
+                                color: rgb(9, 9, 111);
+                                text-shadow: 2px 2px 3px white;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                margin-right: 0;
+                            }
+                            .r {
+                                font-size: 120px;
+                                font-weight: bold;
+                                color: rgba(187, 4, 4, 0.933);
+                                text-shadow: 2px 2px 3px white;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                margin-left: 0;
+                            }
+
+                            a {
+                                color: white;
+                                text-transform: uppercase;
+                                text-decoration: none;
+                                padding: 20px;
+
+                                &:hover {
+                                    border-bottom: 1px solid var(--color-secondary);
+                                    border-top: 1px solid var(--color-thirdiary)
+
+                                }
+                            }
+
+                    
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
