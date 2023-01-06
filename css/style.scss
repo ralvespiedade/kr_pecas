@@ -14,15 +14,17 @@
         
         .home {/*section*/
             background-size: cover;
-            background-image: url(../images/placa1200.jpg);
+            background-image: url(../images/Vitrine.jpg);
             height: 100vh; /*viewport height; 100% da área do navegador */
         
             header {
-            
+                background-color: rgba(165, 42, 42, 0.879);
                 color: rgb(17, 0, 255);
                 padding: 30px 0;
+                //height: 400px;
                 
                 .nav {
+                    margin: 10px 0;   
                     display: flex;
                     justify-content: center;
 
@@ -39,6 +41,7 @@
                             display: flex;
                             align-items: center;
                             margin: 0 10px;
+                            height: 50px;
 
                             .k {
                                 font-size: 120px;
@@ -58,7 +61,7 @@
                             }
 
                             a {
-                                color: white;
+                                color: rgb(221, 229, 230);
                                 text-transform: uppercase;
                                 text-decoration: none;
                                 padding: 20px;
@@ -75,6 +78,39 @@
                         }
                     }
                 }
+                .banner {
+                    text-align: center;
+                    ul {
+                        li {
+                            display: flex;
+                            justify-content: center;
+                            .k {
+                                font-size: 120px;
+                                font-weight: bold;
+                                color: rgb(9, 9, 111);
+                                text-shadow: 2px 2px 3px white;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                margin-right: 0;
+                            }
+                            .r {
+                                font-size: 120px;
+                                font-weight: bold;
+                                color: rgba(187, 4, 4, 0.933);
+                                text-shadow: 2px 2px 3px white;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                    .slogan {
+                       color: white;
+                       font-size: 23px;
+                       font-style: italic;
+                       font-weight: 700;
+                      
+                    }
+                }
+                
             }
         }
     }

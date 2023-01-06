@@ -19,17 +19,19 @@
 * body .home {
   /*section*/
   background-size: cover;
-  background-image: url(../images/placa1200.jpg);
+  background-image: url(../images/Vitrine.jpg);
   height: 100vh;
   /*viewport height; 100% da área do navegador */
 }
 
 * body .home header {
+  background-color: rgba(165, 42, 42, 0.879);
   color: #1100ff;
   padding: 30px 0;
 }
 
 * body .home header .nav {
+  margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,6 +59,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 10px;
+  height: 50px;
 }
 
 * body .home header .nav ul li .k {
@@ -78,7 +81,7 @@
 }
 
 * body .home header .nav ul li a {
-  color: white;
+  color: #dde5e6;
   text-transform: uppercase;
   text-decoration: none;
   padding: 20px;
@@ -87,5 +90,43 @@
 * body .home header .nav ul li a:hover {
   border-bottom: 1px solid var(--color-secondary);
   border-top: 1px solid var(--color-thirdiary);
+}
+
+* body .home header .banner {
+  text-align: center;
+}
+
+* body .home header .banner ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body .home header .banner ul li .k {
+  font-size: 120px;
+  font-weight: bold;
+  color: #09096f;
+  text-shadow: 2px 2px 3px white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 0;
+}
+
+* body .home header .banner ul li .r {
+  font-size: 120px;
+  font-weight: bold;
+  color: rgba(187, 4, 4, 0.933);
+  text-shadow: 2px 2px 3px white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 0;
+}
+
+* body .home header .banner .slogan {
+  color: white;
+  font-size: 23px;
+  font-style: italic;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
