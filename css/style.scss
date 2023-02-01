@@ -111,10 +111,13 @@
         .about {/*Second Section (sobre)*/
             height: 100vh;
             background-color:rgb(9, 9, 111);
-            
+            display: flex;
+            align-items: center;
             .container {
                 display: flex;
                 padding: 50px 0;
+
+                
                 .timing {
                     
                     background-image: url(../images/estreita_horario.jpg);
@@ -184,11 +187,12 @@
                 .expirience {
                     /*Lado direito da experiencia*/
                     max-width: 65%;
+                    height: 688.44px;
                     background-color: white;  
                     color: #ff0000;
                     border-radius: 10px;
                     padding: 10px;
-                    margin: 0px 5px ;
+                    margin: 0px 5px;
                     
                     span {/*Uma hist. única*/
                         
@@ -238,6 +242,55 @@
 
                 }
 
+            }
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+           
+            .container {
+                background-color: #ba0e0e;
+                height: 100vh;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                
+                .box {
+                    height: 25vh;
+                    width: 200px;
+                   
+                    box-shadow: 3px 2px 5px black;
+                    border-radius: 8px;
+                    margin: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(0, 0, 255, 0.492);
+                    color: white;
+                    
+                    .material-symbols-outlined {/*icon*/
+                      color: rgb(222, 218, 218);
+                    
+                        font-variation-settings:
+                      'FILL' 0,
+                      'wght' 400,
+                      'GRAD' 0,
+                      'opsz' 48
+                    }
+                    
+                    h2 {
+                        font-size: 20px;
+                       
+                    }
+                    img {
+                        width: 150px;
+                        border-radius: 5px;
+                        box-shadow: 2px 2px 3px black;
+                    }
+                }
             }
         }
         
