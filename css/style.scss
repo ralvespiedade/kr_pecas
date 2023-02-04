@@ -1,7 +1,7 @@
 :root {
-    --color-primary: #ffffff;
-    --color-secondary: #ff0000;
-    --color-thirdiary: #0a0888;
+    --color-primary: rgb(255, 0, 0);
+    --color-secondary: rgb(194, 92, 8);
+    --azul-padrao: #095e6f;
 }
 
 * {
@@ -24,7 +24,7 @@
             height: 100vh; /*viewport height; 100% da área do navegador */
             
             header {
-                background-color: rgba(165, 42, 42, 0.879);
+                background-color: rgba(194, 92, 8, 0.87);
                 padding: 30px 0;
                 
                 
@@ -36,11 +36,6 @@
                     ul {
                         display: flex;
                         list-style: none;
-                        
-                        .logo {
-                            margin: 0 30px;
-                            
-                        }
                         
                         li {
                             display: flex;
@@ -62,9 +57,7 @@
                                     
                                 }
                             }
-                            
-                            
-                            
+        
                         }
                     }
                 }
@@ -79,7 +72,7 @@
                                 font-size: 120px;
                                 font-weight: bold;
                                 color: rgb(9, 9, 111);
-                                text-shadow: 2px 2px 3px white;
+                                text-shadow: 3px 3px 3px white;
                                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                                 margin-right: 0;
                                 
@@ -88,7 +81,7 @@
                                 font-size: 120px;
                                 font-weight: bold;
                                 color: rgba(187, 4, 4, 0.933);
-                                text-shadow: 2px 2px 3px white;
+                                text-shadow: 3px 3px 3px white;
                                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                                 margin-left: 0;
                                 
@@ -110,7 +103,7 @@
         
         .about {/*Second Section (sobre)*/
             height: 100vh;
-            background-color:rgb(9, 9, 111);
+            background-color: var(--color-secondary);
             display: flex;
             align-items: center;
             .container {
@@ -245,25 +238,38 @@
             }
         }
 
-        .products {
+        .products {/*Section Produtos*/
             display: flex;
             justify-content: center;
-           
+            flex-direction: column;
+            
+            .title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 10vh;
+                h2 {
+                    font-size: 45px;
+                    font-weight: 400;
+                    color: rgba(47, 0, 255, 0.796);
+                }
+            }
             .container {
                 background-color: #ba0e0e;
-                height: 100vh;
+                height: 90vh;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-between;
+                justify-content: space-around;
                 align-items: center;
+                //padding: 180px 0 10px 0;
                 
                 .box {
-                    height: 25vh;
-                    width: 200px;
+                    height: 30vh;
+                    width: 230px;
                    
                     box-shadow: 3px 2px 5px black;
                     border-radius: 8px;
-                    margin: 40px;
+                    margin: 10px;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -271,19 +277,20 @@
                     background-color: rgba(0, 0, 255, 0.492);
                     color: white;
                     
-                    .material-symbols-outlined {/*icon*/
-                      color: rgb(222, 218, 218);
-                    
+                    .material-symbols-rounded {/*icon*/
+                        color: rgb(231, 116, 116);
+                        margin-bottom: 5px;
                         font-variation-settings:
-                      'FILL' 0,
-                      'wght' 400,
-                      'GRAD' 0,
-                      'opsz' 48
+                            'FILL' 0,
+                            'wght' 400,
+                            'GRAD' 0,
+                            'opsz' 48   
                     }
                     
                     h2 {
                         font-size: 20px;
-                       
+                       color:rgb(103, 103, 161);
+                       margin-bottom: 20px;
                     }
                     img {
                         width: 150px;
@@ -294,5 +301,90 @@
             }
         }
         
+        .appointment {/*Section contato*/
+            background-color:rgb(9, 9, 111);
+            color: gray;
+            background-image: url(/images/carreta.png);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size: 550px;
+
+            
+            .container {
+                height: 100vh;
+                padding-top: 150px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2 {
+                    
+                    font-size: 45px;
+                    color: white; 
+                    padding-bottom: 50px;
+                }
+                span {
+                    margin-bottom: 70px;
+                    font-size: 22px;
+                    color:rgb(198, 44, 44);
+                }
+                
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    .personal_data {
+                        display: flex;
+                        margin-bottom: 50px;
+                        justify-content: space-around;
+                        .case {/*div que envolve o label e o input */
+                            margin: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            
+                            label {
+                                font-size: 16px;
+                                color: grey;
+                                display: block;
+                                margin-bottom: 5px;
+                                
+                            }
+                            input {
+                                font-size: 17px;
+                                width: 250px;
+                                border-radius: 3px;
+                            }
+                        }
+                        
+                    }
+                    .case_message {
+                        
+                        label {
+                            display: block;
+                            margin-bottom: 5px;        
+
+                        }
+                        
+                        textarea {
+                            border-radius: 5px;
+                        }
+                    }
+                    .submit_buttom {
+                        width: fit-content;
+                        font-size: 15px;
+                        font-weight: 600;
+                        padding: 5px 5px;
+                        color: rgb(39, 39, 140);
+                        border: 2px solid rgb(20, 20, 105);
+                        border-radius: 6px;
+                        background-color:rgb(225, 225, 237);
+                        
+                    }
+
+                }
+            }
+        }
+
+
     }
 }

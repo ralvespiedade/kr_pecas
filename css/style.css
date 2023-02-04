@@ -1,8 +1,8 @@
 @charset "UTF-8";
 :root {
-  --color-primary: #ffffff;
-  --color-secondary: #ff0000;
-  --color-thirdiary: #0a0888;
+  --color-primary: rgb(255, 0, 0);
+  --color-secondary: rgb(194, 92, 8);
+  --azul-padrao: #095e6f;
 }
 
 * {
@@ -32,7 +32,7 @@
 }
 
 * body .home header {
-  background-color: rgba(165, 42, 42, 0.879);
+  background-color: rgba(194, 92, 8, 0.87);
   padding: 30px 0;
 }
 
@@ -51,10 +51,6 @@
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-}
-
-* body .home header .nav ul .logo {
-  margin: 0 30px;
 }
 
 * body .home header .nav ul li {
@@ -102,7 +98,7 @@
   font-size: 120px;
   font-weight: bold;
   color: #09096f;
-  text-shadow: 2px 2px 3px white;
+  text-shadow: 3px 3px 3px white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-right: 0;
 }
@@ -111,7 +107,7 @@
   font-size: 120px;
   font-weight: bold;
   color: rgba(187, 4, 4, 0.933);
-  text-shadow: 2px 2px 3px white;
+  text-shadow: 3px 3px 3px white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-left: 0;
 }
@@ -127,7 +123,7 @@
 * body .about {
   /*Second Section (sobre)*/
   height: 100vh;
-  background-color: #09096f;
+  background-color: var(--color-secondary);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,37 +262,60 @@
 }
 
 * body .products {
+  /*Section Produtos*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* body .products .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+}
+
+* body .products .title h2 {
+  font-size: 45px;
+  font-weight: 400;
+  color: rgba(47, 0, 255, 0.796);
 }
 
 * body .products .container {
   background-color: #ba0e0e;
-  height: 100vh;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 * body .products .container .box {
-  height: 25vh;
-  width: 200px;
+  height: 30vh;
+  width: 230px;
   -webkit-box-shadow: 3px 2px 5px black;
           box-shadow: 3px 2px 5px black;
   border-radius: 8px;
-  margin: 40px;
+  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,14 +333,17 @@
   color: white;
 }
 
-* body .products .container .box .material-symbols-outlined {
+* body .products .container .box .material-symbols-rounded {
   /*icon*/
-  color: #dedada;
+  color: #e77474;
+  margin-bottom: 5px;
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
 
 * body .products .container .box h2 {
   font-size: 20px;
+  color: #6767a1;
+  margin-bottom: 20px;
 }
 
 * body .products .container .box img {
@@ -329,5 +351,111 @@
   border-radius: 5px;
   -webkit-box-shadow: 2px 2px 3px black;
           box-shadow: 2px 2px 3px black;
+}
+
+* body .appointment {
+  /*Section contato*/
+  background-color: #09096f;
+  color: gray;
+  background-image: url(/images/carreta.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 550px;
+}
+
+* body .appointment .container {
+  height: 100vh;
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body .appointment .container h2 {
+  font-size: 45px;
+  color: white;
+  padding-bottom: 50px;
+}
+
+* body .appointment .container span {
+  margin-bottom: 70px;
+  font-size: 22px;
+  color: #c62c2c;
+}
+
+* body .appointment .container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+* body .appointment .container form .personal_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+* body .appointment .container form .personal_data .case {
+  /*div que envolve o label e o input */
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* body .appointment .container form .personal_data .case label {
+  font-size: 16px;
+  color: grey;
+  display: block;
+  margin-bottom: 5px;
+}
+
+* body .appointment .container form .personal_data .case input {
+  font-size: 17px;
+  width: 250px;
+  border-radius: 3px;
+}
+
+* body .appointment .container form .case_message label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+* body .appointment .container form .case_message textarea {
+  border-radius: 5px;
+}
+
+* body .appointment .container form .submit_buttom {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 5px 5px;
+  color: #27278c;
+  border: 2px solid #141469;
+  border-radius: 6px;
+  background-color: #e1e1ed;
 }
 /*# sourceMappingURL=style.css.map */
