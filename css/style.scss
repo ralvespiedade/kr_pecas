@@ -331,16 +331,19 @@
                 form {
                     display: flex;
                     flex-direction: column;
-                    align-items: flex-end;
+                    align-items: center;
+                    justify-content: space-between;
 
                     .personal_data {
                         display: flex;
-                        margin-bottom: 50px;
-                        justify-content: space-around;
+                        
+                        
+                        
                         .case {/*div que envolve o label e o input */
-                            margin: 10px;
+                            
                             display: flex;
                             flex-direction: column;
+                            margin: 0 10px 50px 10px;
                             
                             label {
                                 font-size: 16px;
@@ -351,8 +354,9 @@
                             }
                             input {
                                 font-size: 17px;
-                                width: 250px;
+                                width: 350px;
                                 border-radius: 3px;
+                                padding: 6px;
                             }
                         }
                         
@@ -385,6 +389,65 @@
             }
         }
 
+        .location {/*Section Localização*/
+            height: 100vh;
+            padding: 100px 0;
+            background-image: url(/images/backgroundEPI.jpg);
+            background-size: cover;
+           
+            .container {
+                .head {
+                    background-color: black;
+                    padding: 20px;
+                    width: 100%;
+                    display: flex;
+                    .info {
+                        background-color:rgb(9, 9, 111);
+                        
+                        margin: 0 10px;
+                        border-radius: 4px;
+                        display: flex;
+                        align-items: center;
+                        .icon {
+                            background-color: black;
+                            margin: 5px;
+                            width: 35px;
+                            span {
+                                background-color: green;
+                                
+                                .material-symbols-outlined {/*icon*/
+                                    //color: rgb(231, 116, 116);
+                                    //margin-bottom: 5px;
+                                    font-variation-settings:
+                                        'FILL' 0,
+                                        'wght' 400,
+                                        'GRAD' 0,
+                                        'opsz' 48   
+                                }
+                                
+                            } 
+                            
+                        }
+                        .text {
+                            span {
+                                display: block;
+                                color: rgb(233, 200, 200);
+                                font-size: 18px;
+                            }
+                            :last-of-type {
+                                color: white;
+                                font-size: 13px;
+                            }
+
+                        }
+
+                    }
+                }
+                .map {
+
+                }
+            }
+        }
 
     }
 }
