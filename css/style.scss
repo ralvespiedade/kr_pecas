@@ -390,7 +390,7 @@
         }
 
         .location {/*Section Localização*/
-            height: 100vh;
+            
             padding: 100px 0;
             background-image: url(/images/backgroundEPI.jpg);
             background-size: cover;
@@ -400,27 +400,35 @@
                     background-color: black;
                     padding: 20px;
                     width: 100%;
+                    border-radius: 5px 5px 0 0;
                     display: flex;
+                    justify-content: space-around;
                     .info {
                         background-color:rgb(9, 9, 111);
                         
-                        margin: 0 10px;
+                        padding: 0 18px;
                         border-radius: 4px;
                         display: flex;
                         align-items: center;
+                        justify-content: center;
                         .icon {
-                            background-color: black;
-                            margin: 5px;
-                            width: 35px;
+                            
+                            
+                            
+                            
                             span {
-                                background-color: green;
-                                
-                                .material-symbols-outlined {/*icon*/
-                                    //color: rgb(231, 116, 116);
-                                    //margin-bottom: 5px;
+                                border-radius: 15px;
+                                background-color: white;
+                                width: 30px;
+                                height: 30px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                .material-symbols-rounded {/*icon*/
+                                    color: rgb(231, 116, 116);
                                     font-variation-settings:
                                         'FILL' 0,
-                                        'wght' 400,
+                                        'wght' 700,
                                         'GRAD' 0,
                                         'opsz' 48   
                                 }
@@ -429,9 +437,10 @@
                             
                         }
                         .text {
+                            margin: 5px;
                             span {
                                 display: block;
-                                color: rgb(233, 200, 200);
+                                color: rgb(157, 157, 157);
                                 font-size: 18px;
                             }
                             :last-of-type {
@@ -443,10 +452,25 @@
 
                     }
                 }
-                .map {
+                
+            }
+            .map {
+                width: 100%;
 
+                iframe {
+                    width: 100%;
+                    border-radius: 0 0 5px 5px;
                 }
             }
+        }
+
+        .footer {
+            background-color: black;
+            color: rgb(254, 251, 251);
+            font-size: 12px;
+            text-align: center; 
+            height: 100px;
+            padding: 40px;
         }
 
     }
