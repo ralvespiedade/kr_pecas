@@ -10,21 +10,20 @@ opcoes_menu = [
 ]
 //só exibirá o menu quando a largura da tela for maior que 600px
 
-/*
-if (window.screen.width > 600) {
-    for (i of opcoes_menu) {
-        
-        
-        lista_menu.innerHTML += `
-            <li>
-                <a href=${i.id}>${i.nome}</a>
+
+for (i of opcoes_menu) {
     
-            </li>
-        `
-        
-    }
+    
+    lista_menu.innerHTML += `
+        <li>
+            <a href=${i.id}>${i.nome}</a>
+
+        </li>
+    `
+    
 }
-/*
+
+
 
 
 

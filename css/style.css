@@ -6,16 +6,9 @@
   }
   body .home {
     /*section*/
-    position: relative;
-    background-size: cover;
-    background-image: url(../images/Vitrine2.jpg);
-    background-attachment: fixed;
-    /*viewport height; 100% da área do navegador */
-    width: 160vw;
+    width: 80vw;
   }
   body .home header {
-    background-color: var(--cinza-transparente);
-    padding: 30px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -23,33 +16,50 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  body .home header .nav #lista_menu {
+    display: none;
+  }
+  body .home .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   body .home .banner ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    list-style: none;
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
   }
   body .home .banner ul li img {
-    width: 150px;
+    width: 100px;
   }
   body .home .banner ul li div {
-    border-radius: 8px;
-    border: 3px solid white;
-    background-color: var(--azul-principal-logo);
-    background-color: rgba(251, 241, 241, 0.605);
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    margin-top: 30px;
   }
   body .home .banner ul li div .slogan {
     color: #161849;
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: bolder;
+  }
+  body .home .banner ul li .carreta {
+    display: none;
+  }
+  body .home .banner .menu_hamburger {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  body .home .banner .menu_hamburger div {
+    background-color: red;
+    width: 40px;
+    height: 5px;
+    margin: 10px 0;
   }
   body .home .getIntouch {
     background-color: var(--cinza-transparente);
@@ -81,7 +91,6 @@
   }
   body .about {
     height: 100vh;
-    background-color: var(--perola);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -103,8 +112,6 @@
     background-position: center;
     border-radius: 10px;
     padding: 10px;
-    margin: 5px;
-    width: 35%;
   }
   body .about .container .timing .overlay {
     /*O retangulo cinza por cima da foto*/
@@ -144,7 +151,6 @@
     border-radius: 5px;
     border: 2px solid;
     background-color: var(--perola);
-    width: 200px;
   }
   body .about .container .timing .overlay .text .material-symbols-outlined {
     /**/
@@ -183,7 +189,6 @@
     border-radius: 5px;
     padding: 7px;
     display: block;
-    width: 150px;
     text-align: center;
   }
   body .about .container .expirience h2 {
@@ -282,7 +287,6 @@
   }
   body .products .container .box {
     height: 40vh;
-    width: 230px;
     -webkit-box-shadow: 3px 2px 5px black;
             box-shadow: 3px 2px 5px black;
     border-radius: 8px;
@@ -316,7 +320,6 @@
     margin-bottom: 20px;
   }
   body .products .container .box img {
-    width: 150px;
     border-radius: 5px;
     -webkit-box-shadow: 2px 2px 3px black;
             box-shadow: 2px 2px 3px black;
@@ -447,7 +450,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 250px;
   }
   body .location .container .head .info .icon span {
     border-radius: 15px;
@@ -475,9 +477,6 @@
   body .location .container .head .info .text :last-of-type {
     color: white;
     font-size: 13px;
-  }
-  body .location .map {
-    width: 100%;
   }
   body .location .map iframe {
     width: 100%;
