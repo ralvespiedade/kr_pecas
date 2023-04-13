@@ -171,6 +171,7 @@ body .about .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-height: 652px;
 }
 
 body .about .container .timing {
@@ -312,7 +313,7 @@ body .about .container .expirience .lowParteExperience div {
 }
 
 body .about .container .expirience .lowParteExperience div p {
-  font-size: 18px;
+  font-size: 4vw;
   margin: 5px 0 10px 0;
 }
 
