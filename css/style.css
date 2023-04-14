@@ -150,6 +150,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     max-height: 652px;
+    overflow: auto;
   }
   body .about .container .timing {
     display: none;
@@ -275,7 +276,7 @@
             align-items: center;
   }
   body .about .container .expirience .lowParteExperience div p {
-    font-size: 4vw;
+    font-size: 18px;
     margin: 5px 0 10px 0;
   }
   body .about .container .expirience .lowParteExperience img {
